@@ -157,3 +157,10 @@ footer {
   height: 314px;
 }
 
+.graffiti-svg {
+  position: absolute;
+  top: 161px;
+  z-index: -1;
+  right: 461px;
+}
+
