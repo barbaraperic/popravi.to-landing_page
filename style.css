@@ -136,7 +136,7 @@ table {
 h1 {
   font-size: 80px;
   font-family: 'Darker Grotesque', sans-serif;
-
+  z-index: 99999999;
 }
 
 .container {
@@ -197,14 +197,15 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 200px;
+  top: 100px;
 }
 
 .leafs-svg {
   position: absolute;
   z-index: 2;
-  top: -100px;
+  top: -203px;
   right: -78px;
+
 }
 
 .container.footer {
