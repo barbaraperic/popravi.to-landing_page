@@ -154,7 +154,11 @@ main {
 footer {
   background-color: #1D1C1C;
   color: white;
-  height: 314px;
+  min-height: 314px;
+  display: flex;
+  flex: 1;
+  padding-top: 55px;
+  padding: 40px 120px 0 120px;
 }
 
 .main-banner {
@@ -205,13 +209,6 @@ footer {
   z-index: 2;
   top: -203px;
   right: -78px;
-
-}
-
-.container.footer {
-  display: flex;
-  flex: 1;
-  padding-top: 55px;
 }
 
 .item {
@@ -270,6 +267,10 @@ footer {
   padding-right: 16px;
 }
 
+.social-icons li:last-child {
+  padding-right: 0px;
+}
+
 .social-icons a {
   font-size: 32px;
   margin-top: 32px;
@@ -288,4 +289,81 @@ footer {
   background-color: hsla(162, 77%, 34%, 1);
   color: white;
   box-shadow: 10px 10px 40px rgb(0 0 0 / 10%);
+  transition: all 0.6s;
+}
+
+.btn-green:hover {
+  background-color: rgb(11, 97, 71);
+}
+
+
+@media (max-width: 550px) {
+  .container {
+    margin: 10px;
+  }
+
+  .main-banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  main {
+    height: 600px;
+  }
+
+  header {
+    margin-bottom: 42px;
+  }
+
+  .main-announcement p {
+    text-align: center;
+  }
+
+  footer {
+    /* height: 700px; */
+    display: block;
+    padding: 10px;
+  }
+
+  .footer.container {
+    display: block;
+  }
+
+  .about.item p {
+    padding: 0;
+  }
+
+  .made-by {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .socials {
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
+
+  .social-icons li:last-child {
+    padding-right: 0px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
 }
